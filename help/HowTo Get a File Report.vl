@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="FnIlDAy5v9yLS21TMTZxXD" LanguageVersion="2025.7.0-0384-g212a8f1596" Version="0.128">
+  <NugetDependency Id="UREFA6zBUvyM2ZtfkIGF7e" Location="VL.CoreLib" Version="2025.7.0-0384-g212a8f1596" />
+  <Patch Id="P1GaBDDX0pwL7mK7YTI7vj">
+    <Canvas Id="FB6wDoG6CH3Lj9iHYcjKom" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Ii62KFfi30YNizrIPzhi5M">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="TWnTkKJ7cHwPhzUi8BSixL">
+        <Canvas Id="GJDZ9TcgHlcPJ0Lw3YgXZY" CanvasType="Group">
+          <Node Bounds="409,331,89,19" Id="LRGtpOULe5WNt9b6nO6tUI">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="callmenames-2025-06-30.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="VirusTotalClient" />
+            </p:NodeReference>
+            <Pin Id="HGhhgb763eqNA3wodxFEdm" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="O46t5G6IUjjQFJ0vaQrWpH" Name="API Key" Kind="InputPin" />
+            <Pin Id="CVI26WEI9rmNFWPQHKhbdQ" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="DviGqXI06geLV5UyUuUjzW" Comment="API Key" Bounds="411,300,174,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="409,440,62,19" Id="JePMxSJHfKNOSbrChvsWL2">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="callmenames-2025-06-30.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FileReport" />
+            </p:NodeReference>
+            <Pin Id="EtTPdAUpkECO0k3gVdZqkP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="EX3WNPoQyM1L2V7huWTVtx" Name="Client" Kind="InputPin" />
+            <Pin Id="BlCgCAD2ya4NgRaYbLqBNb" Name="File Id" Kind="InputPin" />
+            <Pin Id="Coj8AJIelygLiLz3Cbbsfj" Name="Trigger" Kind="InputPin" />
+            <Pin Id="Ar7DdSH07Y7LlUgmLe8odh" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UKCA407aA1UOwHXnOHJKJJ" Comment="File Id" Bounds="439,380,171,15" ShowValueBox="true" isIOBox="true" Value="f03e22d49115cff54e374e406165d501">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="S2mQicGot7qMqBK8Pe8fg8" Comment="Trigger" Bounds="468,411,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="S7EU6VpqLpGNR6X6omMaLC" Name="Create" />
+        <Patch Id="A2urnu3EOymNqs4TyMbnKE" Name="Update" />
+        <ProcessDefinition Id="J6UA5eVT5NHLXvenwmHbVz">
+          <Fragment Id="Npizg6usoYbNQ2x9egKe4f" Patch="S7EU6VpqLpGNR6X6omMaLC" Enabled="true" />
+          <Fragment Id="R2rRh2DS7wcPvMkcxHMC5S" Patch="A2urnu3EOymNqs4TyMbnKE" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="QxEk4M49xWfL3fYCPL96S0" Ids="DviGqXI06geLV5UyUuUjzW,O46t5G6IUjjQFJ0vaQrWpH" />
+        <Link Id="B69y6S32GJAP3ac21309wM" Ids="CVI26WEI9rmNFWPQHKhbdQ,EX3WNPoQyM1L2V7huWTVtx" />
+        <Link Id="CIQevVxyKjLP49gtazzXxv" Ids="UKCA407aA1UOwHXnOHJKJJ,BlCgCAD2ya4NgRaYbLqBNb" />
+        <Link Id="U8spHLYRIJlNqlAUlEQAHv" Ids="S2mQicGot7qMqBK8Pe8fg8,Coj8AJIelygLiLz3Cbbsfj" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Dp0alUSmllMLAwTZAzq2DA" Location="VL.VirusTotal" Version="0.0.0" />
+</Document>
