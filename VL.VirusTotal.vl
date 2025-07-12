@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="OVrxFWZE31qQMEvZhShAg7" LanguageVersion="2025.7.0-0384-g212a8f1596" Version="0.128">
-  <NugetDependency Id="JEuZMvI8MP2P6RkgxGKYTT" Location="VL.CoreLib" Version="2025.7.0-0384-g212a8f1596" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OVrxFWZE31qQMEvZhShAg7" LanguageVersion="2025.7.0-0402-gd84c627862" Version="0.128">
+  <NugetDependency Id="JEuZMvI8MP2P6RkgxGKYTT" Location="VL.CoreLib" Version="2025.7.0-0402-gd84c627862" />
   <Patch Id="OID3jLai59zOkHuKz2JMph">
     <Canvas Id="EIkW6Pvu4eFOjLRfOK9qkx" DefaultCategory="VirusTotal" CanvasType="FullCategory">
       <Canvas Id="Httwp6qLjScQOwAs4CAi11" Name="Advanced" Position="294,260">
@@ -99,7 +99,7 @@
     ************************ ConfigureFileRequest ************************
 
 -->
-        <Node Name="ConfigureFileRequest" Bounds="623,722,174,132" Id="VzvXsRbdaXhQRfaBOXbgUI">
+        <Node Name="ConfigureFileRequest" Bounds="623,722,174,165" Id="VzvXsRbdaXhQRfaBOXbgUI">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" />
           </p:NodeReference>
@@ -137,6 +137,10 @@
             <Link Id="JUB2CczJahAQbqdbyweDe9" Ids="PZSGlliKI0iOLFi3BoZeuJ,QRHOTCAsbXpQW0112bM795" />
             <ControlPoint Id="NGxPDNiTMpJLpM5QgzQfFq" Bounds="637,740" />
             <Link Id="OYbm47zvYW6L92vxBkaF7i" Ids="NGxPDNiTMpJLpM5QgzQfFq,JiaIZyKp3pqPxCLrglySuV" />
+            <ControlPoint Id="Oepm66AldLPMF9brbUoVfc" Bounds="637,870" />
+            <Link Id="RX6zNtr7fsoOZCqGpporRt" Ids="AC72TZbY0gjNug3BsT1K32,Oepm66AldLPMF9brbUoVfc" />
+            <Pin Id="Bq3sKFOrkFTOXaNbuLM6vz" Name="Output" Kind="OutputPin" />
+            <Link Id="SgR5snfFu2XMcR7YfJazcc" Ids="Oepm66AldLPMF9brbUoVfc,Bq3sKFOrkFTOXaNbuLM6vz" IsHidden="true" />
           </Patch>
         </Node>
       </Canvas>
@@ -249,6 +253,7 @@
                   </p:NodeReference>
                   <Pin Id="QDEHh7n833qQFMqIRneqrK" Name="Request" Kind="InputPin" />
                   <Pin Id="MqasdctdXVmLs5hZ5KwoY8" Name="File Id" Kind="InputPin" />
+                  <Pin Id="Lax5BFruTXLOT9S1asNDGy" Name="Output" Kind="OutputPin" />
                 </Node>
               </Patch>
               <ControlPoint Id="JFVtCtsOTaFN5H4ATQWOqI" Bounds="799,640" Alignment="Top" />
@@ -803,6 +808,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Keh3of3i7q2OZ62hXwzdHI" Location="RestSharp" Version="112.1.0" />
+  <NugetDependency Id="Keh3of3i7q2OZ62hXwzdHI" Location="RestSharp" Version="106.15.0" />
   <PlatformDependency Id="K6L9bZHl9QJNmeBUYsA1fi" Location="System.Net.Http" />
 </Document>
