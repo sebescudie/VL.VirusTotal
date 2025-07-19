@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FnIlDAy5v9yLS21TMTZxXD" LanguageVersion="2025.7.0-0384-g212a8f1596" Version="0.128">
-  <NugetDependency Id="UREFA6zBUvyM2ZtfkIGF7e" Location="VL.CoreLib" Version="2025.7.0-0384-g212a8f1596" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FnIlDAy5v9yLS21TMTZxXD" LanguageVersion="2025.7.0-0413-g101b9a7a4c" Version="0.128">
+  <NugetDependency Id="UREFA6zBUvyM2ZtfkIGF7e" Location="VL.CoreLib" Version="2025.7.0-0413-g101b9a7a4c" />
   <Patch Id="P1GaBDDX0pwL7mK7YTI7vj">
     <Canvas Id="FB6wDoG6CH3Lj9iHYcjKom" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="TWnTkKJ7cHwPhzUi8BSixL">
         <Canvas Id="GJDZ9TcgHlcPJ0Lw3YgXZY" CanvasType="Group">
-          <Node Bounds="409,331,89,19" Id="LRGtpOULe5WNt9b6nO6tUI">
+          <Node Bounds="106,171,89,19" Id="LRGtpOULe5WNt9b6nO6tUI">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="callmenames-2025-06-30.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VirusTotalClient" />
@@ -24,12 +24,12 @@
             <Pin Id="O46t5G6IUjjQFJ0vaQrWpH" Name="API Key" Kind="InputPin" />
             <Pin Id="CVI26WEI9rmNFWPQHKhbdQ" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="DviGqXI06geLV5UyUuUjzW" Comment="API Key" Bounds="411,300,174,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="DviGqXI06geLV5UyUuUjzW" Comment="API Key" Bounds="108,140,390,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="409,440,62,19" Id="JePMxSJHfKNOSbrChvsWL2">
+          <Node Bounds="106,280,62,19" Id="JePMxSJHfKNOSbrChvsWL2">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="callmenames-2025-06-30.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FileReport" />
@@ -40,12 +40,12 @@
             <Pin Id="Coj8AJIelygLiLz3Cbbsfj" Name="Trigger" Kind="InputPin" />
             <Pin Id="Ar7DdSH07Y7LlUgmLe8odh" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="UKCA407aA1UOwHXnOHJKJJ" Comment="File Id" Bounds="439,380,171,15" ShowValueBox="true" isIOBox="true" Value="f03e22d49115cff54e374e406165d501">
+          <Pad Id="UKCA407aA1UOwHXnOHJKJJ" Comment="File Id" Bounds="136,220,171,15" ShowValueBox="true" isIOBox="true" Value="f03e22d49115cff54e374e406165d501">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="S2mQicGot7qMqBK8Pe8fg8" Comment="Trigger" Bounds="468,411,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="S2mQicGot7qMqBK8Pe8fg8" Comment="Trigger" Bounds="165,251,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -53,6 +53,96 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="106,330,65,19" Id="VFPZ4wWbqKpOo6awLAkNsH">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="IDA2YWYi34rOQSMhyseodZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VHpJ3D8iTOHNer504QhcrQ" Name="Initial Result" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Uf5Tzvs7AEFQBki9ddBUyo" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="EzghSi2gzvBL3jdJlc4mzA" Name="Reset" Kind="InputPin" />
+            <Pin Id="AsMzlX1PPmaMjtxR0Lcx6Q" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="K9hkoZqmE5WMcfMfHg3bfI" Name="Value" Kind="OutputPin" />
+            <Pin Id="DN7HcoXEqw0LaG40w8Iou9" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="106,380,62,26" Id="VcNgJZ2Y4fmOisdZccYW54">
+            <p:NodeReference LastCategoryFullName="VirusTotal.FileObject" LastDependency="VL.VirusTotal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="FileObject" />
+              <Choice Kind="OperationCallFlag" Name="Attributes" />
+            </p:NodeReference>
+            <Pin Id="ItKSdQb9wKZQE0smawMC9v" Name="Input" Kind="StateInputPin" />
+            <Pin Id="CFqHQF1vKrEQIPdOHVHs8h" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="PuL50HD7XxbPghs7kZd91E" Name="Attributes" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="106,450,105,26" Id="BsZqRTsWNuBPa9Cl30zzU4">
+            <p:NodeReference LastCategoryFullName="VirusTotal.Attributes" LastDependency="VL.VirusTotal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Attributes" />
+              <Choice Kind="OperationCallFlag" Name="LastAnalysisResults" />
+            </p:NodeReference>
+            <Pin Id="I8Hkbz4OxdLLQs0wl4VM7o" Name="Input" Kind="StateInputPin" />
+            <Pin Id="IbHhz9cEWLKLThivYMk908" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="KgHOvblUmCrNWd3GBkCSFo" Name="Last Analysis Results" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="226,450,94,26" Id="AmQk8dJzWCdO5wS86MrlZM">
+            <p:NodeReference LastCategoryFullName="VirusTotal.Attributes" LastDependency="VL.VirusTotal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Attributes" />
+              <Choice Kind="OperationCallFlag" Name="LastAnalysisStats" />
+            </p:NodeReference>
+            <Pin Id="NMNmwxRo6bfQKrhPs8v7xr" Name="Input" Kind="StateInputPin" />
+            <Pin Id="NgKNxHOLeN6L3IvtzajzvD" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="CNHLOQhix70NiargBOeThc" Name="Last Analysis Stats" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="392,450,140,26" Id="GUE5SjkfvffOyR17IhdhUL">
+            <p:NodeReference LastCategoryFullName="VirusTotal.Attributes" LastDependency="VL.VirusTotal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Attributes" />
+              <Choice Kind="OperationCallFlag" Name="PopularThreatClassification" />
+            </p:NodeReference>
+            <Pin Id="JB6G139IjT5LirZ8zRzugt" Name="Input" Kind="StateInputPin" />
+            <Pin Id="E4QsQXudQ9rP1ZdQrhZDkA" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="EcsaDwkH8rkNUeyfbE41IB" Name="Popular Threat Classification" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="572,450,90,26" Id="UuPxRFTzo9xQZlvCyQ85pG">
+            <p:NodeReference LastCategoryFullName="VirusTotal.Attributes" LastDependency="VL.VirusTotal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Attributes" />
+              <Choice Kind="OperationCallFlag" Name="SubmissionStats" />
+            </p:NodeReference>
+            <Pin Id="EnMYHNep6jtMYC8dRPHlez" Name="Input" Kind="StateInputPin" />
+            <Pin Id="RWdITCSKV4WNEkd48jdYeF" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Ho1ryqIwUFJO9RnVw8eb9W" Name="First Submission Date" Kind="OutputPin" />
+            <Pin Id="H4JogUNJoGtLxDM6i5oI3J" Name="Last Submission Date" Kind="OutputPin" />
+            <Pin Id="Qi4uKvjwzAxMRtKbF3mFR4" Name="Last Analysis Date" Kind="OutputPin" />
+            <Pin Id="K5PvPugHxJHQG8QIxTSkEm" Name="Times Submitted" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="392,500,117,26" Id="PJEVEvAmoyhPVywKiQhJEz">
+            <p:NodeReference LastCategoryFullName="VirusTotal.PopularThreatClassification" LastDependency="VL.VirusTotal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SuggestedThreatLabel" />
+            </p:NodeReference>
+            <Pin Id="PGU1hfvXHppM8qj0Jx2gUb" Name="Input" Kind="StateInputPin" />
+            <Pin Id="GJUwp6PHOqvNKmlUHGk43E" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="NXQZ6vy9O0aPSwewZIy8TW" Name="Suggested Threat Label" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CuxzMKSuNZdPDI9UCLA38B" Comment="" Bounds="394,560,152,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="25,450,66,26" Id="QMjSSr3VroFOZjxKw1WHDy">
+            <p:NodeReference LastCategoryFullName="VirusTotal.Attributes" LastDependency="VL.VirusTotal.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Attributes" />
+              <Choice Kind="OperationCallFlag" Name="Reputation" />
+            </p:NodeReference>
+            <Pin Id="Bq31d54TFfxPNYakr5uLlk" Name="Input" Kind="StateInputPin" />
+            <Pin Id="M1c49KOTL5KMQQP9iQiWoA" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="UE93AorV6P4MRwOC422Gca" Name="Reputation" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PL7KKQ39Y1QNuYKiEGGpsV" Comment="" Bounds="27,500,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="V5cVug8uOoPLqswMbFQAe5" Comment="Last Analysis Results" Bounds="108,611,256,184" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="V7EKMLkNtlgPBZpfFgFOdL" Comment="" Bounds="228,500,134,97" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Tce5N6LWXq6N3UwEWNtSHx" Comment="First Submission Date" Bounds="595,510,183,24" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="S7EU6VpqLpGNR6X6omMaLC" Name="Create" />
         <Patch Id="A2urnu3EOymNqs4TyMbnKE" Name="Update" />
@@ -64,6 +154,19 @@
         <Link Id="B69y6S32GJAP3ac21309wM" Ids="CVI26WEI9rmNFWPQHKhbdQ,EX3WNPoQyM1L2V7huWTVtx" />
         <Link Id="CIQevVxyKjLP49gtazzXxv" Ids="UKCA407aA1UOwHXnOHJKJJ,BlCgCAD2ya4NgRaYbLqBNb" />
         <Link Id="U8spHLYRIJlNqlAUlEQAHv" Ids="S2mQicGot7qMqBK8Pe8fg8,Coj8AJIelygLiLz3Cbbsfj" />
+        <Link Id="PNRYsMDrH05LHqIGE7eiy5" Ids="Ar7DdSH07Y7LlUgmLe8odh,Uf5Tzvs7AEFQBki9ddBUyo" />
+        <Link Id="Lxfy0PqrC9PQPPJtl3BY2I" Ids="K9hkoZqmE5WMcfMfHg3bfI,ItKSdQb9wKZQE0smawMC9v" />
+        <Link Id="HfBplukCnrZL3TjuXHGENy" Ids="PuL50HD7XxbPghs7kZd91E,I8Hkbz4OxdLLQs0wl4VM7o" />
+        <Link Id="ACpNyx1qPuLNoMShgTMP4V" Ids="PuL50HD7XxbPghs7kZd91E,NMNmwxRo6bfQKrhPs8v7xr" />
+        <Link Id="UpwsWRj62TSOjL7kIs79li" Ids="PuL50HD7XxbPghs7kZd91E,JB6G139IjT5LirZ8zRzugt" />
+        <Link Id="GOtsy1lqzv8MhaxIjafodB" Ids="PuL50HD7XxbPghs7kZd91E,EnMYHNep6jtMYC8dRPHlez" />
+        <Link Id="LuVuW0vBtwLMlvH5LIyBfZ" Ids="EcsaDwkH8rkNUeyfbE41IB,PGU1hfvXHppM8qj0Jx2gUb" />
+        <Link Id="B5KBbDZWeZCLbC3JxzbF9q" Ids="NXQZ6vy9O0aPSwewZIy8TW,CuxzMKSuNZdPDI9UCLA38B" />
+        <Link Id="O5u03lgFLAkN4aDWhpI3Lj" Ids="PuL50HD7XxbPghs7kZd91E,Bq31d54TFfxPNYakr5uLlk" />
+        <Link Id="Ejj3ZN3PKUsPzjowaIUNVk" Ids="UE93AorV6P4MRwOC422Gca,PL7KKQ39Y1QNuYKiEGGpsV" />
+        <Link Id="B9iaSEghx8HPg0ZiaNGLTR" Ids="KgHOvblUmCrNWd3GBkCSFo,V5cVug8uOoPLqswMbFQAe5" />
+        <Link Id="Lvu8wwYD310MmYGRV6bJ7a" Ids="CNHLOQhix70NiargBOeThc,V7EKMLkNtlgPBZpfFgFOdL" />
+        <Link Id="QTeHf2M1GbNMEwzjCS5Cp8" Ids="Ho1ryqIwUFJO9RnVw8eb9W,Tce5N6LWXq6N3UwEWNtSHx" />
       </Patch>
     </Node>
   </Patch>
