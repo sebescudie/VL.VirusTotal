@@ -8,4 +8,12 @@ A little node set to make requests to the [VirusTotal V3 REST API](https://docs.
 
 ## Supported features
 
-- Returns _Last Analysis Stats_ and _Suggested Threat Label_ for a file hash
+### File Report
+
+For a file-hash, the library will return:
+
+- Reputation score
+- Last analysis results: security industry scan results for the hash you provided
+- Last analysis stats: how many vendors flagged your sample as malicious/harmless, etc
+- Suggested Threat Label
+- Submission Stats: when was your sample first/last submitted, how many times, etc
